@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30330.147
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "run", "run\run.csproj", "{AD593F94-D3F5-4869-9801-0054009943B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControlEquations", "ControlEquations\ControlEquations.csproj", "{4F1737C7-28BB-48EF-B1D6-C26D1AB2F1D9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AD593F94-D3F5-4869-9801-0054009943B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD593F94-D3F5-4869-9801-0054009943B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD593F94-D3F5-4869-9801-0054009943B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD593F94-D3F5-4869-9801-0054009943B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F1737C7-28BB-48EF-B1D6-C26D1AB2F1D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F1737C7-28BB-48EF-B1D6-C26D1AB2F1D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F1737C7-28BB-48EF-B1D6-C26D1AB2F1D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F1737C7-28BB-48EF-B1D6-C26D1AB2F1D9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {74AF5541-15EE-4E8C-AE51-8BF7387EC654}
+	EndGlobalSection
+EndGlobal
