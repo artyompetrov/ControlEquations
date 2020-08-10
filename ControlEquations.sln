@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "run", "run\run.csproj", "{A
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControlEquations", "ControlEquations\ControlEquations.csproj", "{4F1737C7-28BB-48EF-B1D6-C26D1AB2F1D9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControlEquations.Tests", "ControlEquations.Tests\ControlEquations.Tests.csproj", "{1190A137-B8B7-47BA-BB73-F42DBDDD9473}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{4F1737C7-28BB-48EF-B1D6-C26D1AB2F1D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4F1737C7-28BB-48EF-B1D6-C26D1AB2F1D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4F1737C7-28BB-48EF-B1D6-C26D1AB2F1D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1190A137-B8B7-47BA-BB73-F42DBDDD9473}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1190A137-B8B7-47BA-BB73-F42DBDDD9473}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1190A137-B8B7-47BA-BB73-F42DBDDD9473}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1190A137-B8B7-47BA-BB73-F42DBDDD9473}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

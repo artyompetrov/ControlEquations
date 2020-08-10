@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ControlEquations
 {
-    class ActivePowerFlow : PowerFlow
+    public abstract class Power : EquationArgument
     {
     }
 }

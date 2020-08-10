@@ -11,7 +11,12 @@ namespace run
     {
         static void Main(string[] args)
         {
-            var eq1 = new NodeBalanceEquation();
+            List<int> i = null;
+            List<int> i2 = null;
+            Console.WriteLine(i == i2);
+            Console.ReadLine();
+
+
         }
     }
 }

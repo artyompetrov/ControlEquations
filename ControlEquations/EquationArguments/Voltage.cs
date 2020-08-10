@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace ControlEquations
 {
-    public abstract class ValueSource
+    public class Voltage : EquationArgument
     {
-        public abstract double GetDouble();
-        public abstract bool GetBool();
 
     }
 }

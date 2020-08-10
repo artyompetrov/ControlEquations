@@ -7,13 +7,12 @@ using System.Threading.Tasks;
 
 namespace ControlEquations
 {
-    public abstract class EquationArgument
+    public class Constant
     {
-        public ValueSource ValueSource { get; set; }
+        public double Value { get; private set; }
 
         private readonly List<ControlEquation> _controlEquations = new List<ControlEquation>();
-
-        private ReadOnlyCollection<ControlEquation> _controlEquationsReadOnly; 
+        private ReadOnlyCollection<ControlEquation> _controlEquationsReadOnly;
         public ReadOnlyCollection<ControlEquation> ControlEquations
         {
             get
@@ -22,7 +21,7 @@ namespace ControlEquations
                 {
                     _controlEquationsReadOnly = _controlEquations.AsReadOnly();
                 }
-                return _controlEquationsReadOnly;
+                return _controlEquationsReadOnly; 
             }
         }
 
@@ -32,17 +31,9 @@ namespace ControlEquations
             _controlEquations.Add(controlEquation);
         }
 
-        public bool HasValueSource => ValueSource != null;
-
-        // логику присвоения аргументам значений возможно придется пересмотреть
-        public double Value
+        public Constant(double value)
         {
-            get
-            {
-                return ValueSource.GetDouble();
-            }
+            Value = value;
         }
-
- 
     }
 }

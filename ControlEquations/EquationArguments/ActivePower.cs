@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace ControlEquations
 {
-    class ReactivePowerFlow
+    public class ActivePower : Power
     {
+        
     }
 }

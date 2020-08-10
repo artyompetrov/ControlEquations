@@ -41,13 +41,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ActivePowerFlow.cs" />
+    <Compile Include="Constant.cs" />
+    <Compile Include="ControlEquations\LineActivePowerBalanceEquation.cs" />
+    <Compile Include="EquationArguments\ActivePower.cs" />
     <Compile Include="ControlEquation.cs" />
-    <Compile Include="NodeBalanceEquation.cs" />
+    <Compile Include="EquationArguments\Voltage.cs" />
+    <Compile Include="LinearCombination.cs" />
+    <Compile Include="ControlEquations\NodePowerBalanceEquation.cs" />
     <Compile Include="EquationArgument.cs" />
-    <Compile Include="PowerFlow.cs" />
+    <Compile Include="EquationArguments\Power.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ReactivePowerFlow.cs" />
+    <Compile Include="EquationArguments\ReactivePower.cs" />
+    <Compile Include="RearrangedEquation.cs" />
     <Compile Include="ValueSource.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
