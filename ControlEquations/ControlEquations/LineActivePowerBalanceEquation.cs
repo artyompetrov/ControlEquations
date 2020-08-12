@@ -92,7 +92,50 @@ namespace ControlEquations
                 return new RearrangedControlEquation(subject, arguments, constants, calcSubjectValue, this);
             }
 
-            return null;
+            if (subject == Pji)
+            {
+                double calcSubjectValue(List<EquationArgument> equationArguments, List<Constant> equationConstants)
+                {
+                    var Ui = equationArguments[0].Value;
+                    var Qij = equationArguments[1].Value;
+                    var Pij = equationArguments[2].Value;
+
+                    var R = equationConstants[0].Value;
+
+                   if (IsCloseToZero(Ui, NearZeroMarginVoltage)) return double.NaN;
+
+                    var res = R * (Math.Pow(Pij, 2) + Math.Pow(Qij, 2))/ Math.Pow(Ui, 2) - Pij;
+
+                    return res;
+
+                }
+
+                var arguments = new List<EquationArgument>() { Ui, Qij, Pij };
+                var constants = new List<Constant>() { R };
+                return new RearrangedControlEquation(subject, arguments, constants, calcSubjectValue, this);
+            }
+
+            if (subject == Qij)
+            {
+                double calcSubjectValue(List<EquationArgument> equationArguments, List<Constant> equationConstants)
+                {
+                    var Pij = equationArguments[0].Value;
+                    var Ui = equationArguments[1].Value;
+                    var Pji = equationArguments[2].Value;
+
+                    var R = equationConstants[0].Value;
+
+                    var pijPlusPji = Pij + Pji;
+
+                    var res = Math.Sqrt(pijPlusPji*Math.Pow(Ui,2)/R-Math.Pow(Pij,2));
+                    
+                    return res;
+                }
+
+                var arguments = new List<EquationArgument>() { Pij, Ui, Pji };
+                var constants = new List<Constant>() { R };
+                return new RearrangedControlEquation(subject, arguments, constants, calcSubjectValue, this);
+            }
 
             throw new ArgumentException("The argument that is supposed to be the subject wasn't found among ControlEquation arguments");
         }
