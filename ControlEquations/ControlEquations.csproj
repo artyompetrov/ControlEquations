@@ -42,7 +42,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Constant.cs" />
+    <Compile Include="ControlEquations\ControlEquation1.cs" />
+    <Compile Include="ControlEquations\ControlEquation12.cs" />
+    <Compile Include="ControlEquations\ControlEquation13.cs" />
+    <Compile Include="ControlEquations\ControlEquation15.cs" />
+    <Compile Include="ControlEquations\ControlEquation18.cs" />
+    <Compile Include="ControlEquations\ControlEquation19.cs" />
+    <Compile Include="ControlEquations\ControlEquation20.cs" />
+    <Compile Include="ControlEquations\ControlEquation3.cs" />
+    <Compile Include="ControlEquations\LineReactivePowerBalanceEquation2.cs" />
     <Compile Include="ControlEquations\LineActivePowerBalanceEquation.cs" />
+    <Compile Include="ControlEquations\LineReactivePowerBalanceEquation.cs" />
     <Compile Include="EquationArguments\ActivePower.cs" />
     <Compile Include="ControlEquation.cs" />
     <Compile Include="EquationArguments\Voltage.cs" />
